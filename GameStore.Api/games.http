@@ -1,0 +1,29 @@
+GET http://localhost:5201/games
+
+###
+GET http://localhost:5201/games/1
+
+###
+POST http://localhost:5201/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genreId": 2,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT  http://localhost:5201/games/1
+Content-Type: application/json
+
+{
+    "name": "Fortnite",
+    "genreId": 3,
+    "price": 9.99,
+    "releaseDate": "2018-11-18"
+}
+
+###
+DELETE  http://localhost:5201/games/1
